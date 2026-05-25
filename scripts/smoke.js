@@ -17,6 +17,7 @@ export const options = {
   thresholds: {
     'http_req_failed': ['rate<0.10'],
   },
+  insecureSkipTLSVerify: true,
 };
 
 export default function () {
