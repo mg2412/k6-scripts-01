@@ -54,6 +54,7 @@ services:
       - RAMP_SECONDS=${RAMP_SECONDS:-}
       - HOLD_SECONDS=${HOLD_SECONDS:-}
       - RAMPDOWN_SECONDS=${RAMPDOWN_SECONDS:-}
+      - K6_INSECURE_SKIP_TLS_VERIFY=true
     volumes:
       - ./scripts:/scripts:ro
       - ./lib:/lib:ro
